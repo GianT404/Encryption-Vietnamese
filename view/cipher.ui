@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>817</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #fff;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    font-size: 18px;
+}
+
+QLabel{
+	color: Black;
+	font-size: 24px;
+	font-family: bold;
+}
+
+QTreeView {
+    background-color: #dfe6e9;
+    border: none;
+    padding: 8px;
+}
+QTreeView::item:selected {
+    background-color: #74b9ff;
+    color: white;
+}
+
+QStackedWidget {
+    background-color: white;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+}
+
+QPushButton {
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #55efc4;
+}
+QPushButton:pressed {
+    background-color: #00b894;
+}
+
+/* Nút Logout */
+QPushButton#logoutButton {
+    background-color: #d63031;
+    margin: 10px;
+}
+QPushButton#logoutButton:hover {
+    background-color: #ff7675;
+}
+
+/* Style cho QPlainTextEdit (Ô nhập và ô hiển thị kết quả) */
+QPlainTextEdit {
+    background-color: #ffffff;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    padding: 10px;
+    color: #2d3436;
+}
+QPlainTextEdit:focus {
+    border: 1px solid #0984e3;
+}
+
+/* Style cho QLineEdit (ô nhập key) */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    padding: 8px;
+    color: #2d3436;
+}
+QLineEdit:focus {
+    border: 1px solid #0984e3;
+}
+
+/* Nếu muốn thêm hiệu ứng hover cho QLineEdit */
+QLineEdit:hover {
+    border: 1px solid #b2bec3;
+}
+
+/* Style chung cho QPushButton (nếu bạn có các nút xử lý) */
+QPushButton {
+    background-color: #0984e3;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+QPushButton:hover {
+    background-color: #74b9ff;
+}
+QPushButton:pressed {
+    background-color: #0984e3;
+}
+QPushButton#encryptButton {
+    background-color: #2ecc71; /* Mã màu xanh lá (green) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+QPushButton#encryptButton:hover {
+    background-color: #58d68d; /* Màu xanh lá nhạt hơn khi hover */
+}
+
+QPushButton#encryptButton:pressed {
+    background-color: #27ae60; /* Màu xanh lá đậm hơn khi nhấn */
+}
+QPushButton#uploadButton {
+    background-color: #ffed00; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+QPushButton#saveFileButton{
+	background-color: #2ecc71; /* Mã màu xanh lá (green) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTreeView" name="treeView">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>300</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackWidget">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>30</y>
+      <width>571</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>8</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPlainTextEdit" name="inputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptButton">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giải mã</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="keyLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>291</y>
+        <width>500</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="outputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>410</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Caesar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>125</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>280</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>395</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vignere</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="vigenereInputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="vigenereOutputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>410</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="vigenereKeyLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>291</y>
+        <width>500</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptButton_2">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giải mã</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>125</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>395</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>280</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>50</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Belasco</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptButton_3">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton_3">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giải mã</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="belascoKeyLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>291</y>
+        <width>500</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="belascoInputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="belascoOutputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>410</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>280</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>395</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>125</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>50</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kỹ thuật 2 dòng</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="transpositionInputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="transpositionOutputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>410</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptButton_4">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton_4">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giải mã</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>125</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>395</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kỹ thuật nhiều dòng</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="transpositionInputText_2">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="transpositionOutputText_2">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>410</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="transpositionKeyLineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>291</y>
+        <width>500</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptButton_5">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton_5">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giải mã</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>280</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>395</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>125</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>55</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>XOR</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="xorKeyLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>291</y>
+        <width>500</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="xorInputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="xorOutputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>410</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptButton_6">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton_6">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giải mã</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>125</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>395</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>280</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QPushButton" name="encryptButton_7">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton_7">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giải mã</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="aesInputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="aesOutputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>410</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="aesKeyLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>291</y>
+        <width>500</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>AES</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>125</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>395</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>280</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>55</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RSA</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="rsaInputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>141</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="rsaOutputText">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>400</y>
+        <width>500</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rsaKeyLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>290</y>
+        <width>500</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptButton_8">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decryptButton_8">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>620</y>
+        <width>171</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Giả mã</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>275</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>12</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nội dung cần mã hóa</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>390</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nội dung đã mã hóa</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Thông tin thành viên</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>230</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Võ Long Giáp - 22DH110892</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>330</y>
+        <width>381</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Huỳnh Nhật Cường - 22DH110454</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>430</y>
+        <width>391</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Đặng Mạnh Hiệp - 22DH111089</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reportButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>580</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Thống kê</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="logoutButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>640</y>
+      <width>321</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Đăng xuất</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openFileButton">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>580</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tải tệp lên</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveFileButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>580</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lưu file</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>980</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

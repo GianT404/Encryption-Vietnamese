@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1437</width>
+    <height>915</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Đăng nhập</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Nền tổng thể */
+QWidget {
+    background-color: #fff;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/* Style cho QLineEdit (ô nhập, ví dụ: username, password) */
+QLineEdit {
+    background-color: #ffffff;       /* nền trắng */
+    border: 2px solid #dfe6e9;         /* viền nhẹ màu xám nhạt */
+    border-radius: 10px;               /* bo tròn góc */
+    padding: 10px;                    /* khoảng cách bên trong */
+    font-size: 16px;
+    color: #2d3436;
+}
+
+/* Khi ô nhập được focus, thay đổi viền */
+QLineEdit:focus {
+    border: 2px solid #4A90E2;         /* viền xanh khi chọn */
+}
+
+/* Style cho QPlainTextEdit (ô nhập văn bản hoặc hiển thị kết quả) */
+QPlainTextEdit {
+    background-color: #ffffff;
+    border: 2px solid #dfe6e9;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #2d3436;
+}
+
+/* Khi QPlainTextEdit được focus */
+QPlainTextEdit:focus {
+    border: 2px solid #4A90E2;
+}
+
+/* Nút đăng nhập màu xanh lá */
+QPushButton#loginButton {
+    background-color: #2ecc71; /* Xanh lá */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+/* Hover và pressed cho nút đăng nhập */
+QPushButton#loginButton:hover {
+    background-color: #58d68d; /* Xanh lá nhạt hơn khi hover */
+}
+QPushButton#loginButton:pressed {
+    background-color: #27ae60; /* Xanh lá đậm hơn khi nhấn */
+}
+
+/* Nút đăng ký màu xanh dương */
+QPushButton#registerButton {
+    background-color: #3498db; /* Xanh dương */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+/* Hover và pressed cho nút đăng ký */
+QPushButton#registerButton:hover {
+    background-color: #5dade2; /* Xanh dương nhạt hơn khi hover */
+}
+QPushButton#registerButton:pressed {
+    background-color: #2980b9; /* Xanh dương đậm hơn khi nhấn */
+}
+
+/* QLabel cho thông báo */
+QLabel#messageLabel {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Tất cả các widget cơ bản */
+QWidget {
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 24px;
+}
+
+
+
+
+</string>
+  </property>
+  <widget class="QLineEdit" name="usernameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>360</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>458</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>538</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Đăng nhập</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="registerButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>538</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Đăng kí</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>250</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI,sans-serif</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Đăng nhập</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="messageLabel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>610</y>
+     <width>531</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>345</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Tài khoản</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>440</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mật khẩu</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

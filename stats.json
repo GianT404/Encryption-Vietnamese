@@ -1,0 +1,15 @@
+{
+    "algorithm_usage": {
+        "Caesar": 1,
+        "AES": 1
+    },
+    "total_files_processed": 1,
+    "encryption_times": {
+        "Caesar": [
+            0.002086639404296875
+        ],
+        "AES": [
+            0.0007967948913574219
+        ]
+    }
+}

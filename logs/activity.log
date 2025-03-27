@@ -1,0 +1,207 @@
+2025-03-21 15:17:40,890 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 15:17:40,891 [INFO] Đăng nhập thành công: Admin
+2025-03-21 15:17:40,952 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 15:17:50,730 [INFO] Đã upload file: C:/Users/longg/Downloads/.zip/MaHoa/data/ChayNgayDi.txt vào ô nhập liệu cho thuật toán Vigenère
+2025-03-21 15:19:02,528 [INFO] Đã upload file: C:/Users/longg/Downloads/.zip/MaHoa/data/ChayNgayDi.txt vào ô nhập liệu cho thuật toán Chuyển vị 2 dòng
+2025-03-21 15:26:07,122 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 15:26:07,122 [INFO] Đăng nhập thành công: Admin
+2025-03-21 15:26:07,186 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 15:26:19,006 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 15:35:40,958 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 15:35:40,959 [INFO] Đăng nhập thành công: Admin
+2025-03-21 15:38:17,765 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 15:38:17,766 [INFO] Đăng nhập thành công: Admin
+2025-03-21 15:38:17,825 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 15:42:01,949 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 15:42:11,070 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 15:42:11,071 [INFO] Đăng nhập thành công: Admin
+2025-03-21 15:42:11,128 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 15:48:54,811 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 15:48:54,812 [INFO] Đăng nhập thành công: Admin
+2025-03-21 15:56:07,666 [INFO] Người dùng cố gắng đăng nhập với username: 1
+2025-03-21 15:56:07,667 [WARNING] Đăng nhập thất bại cho username: 1
+2025-03-21 15:56:08,947 [INFO] Người dùng đăng ký với username: 1
+2025-03-21 15:56:08,948 [WARNING] Đăng ký thất bại cho username: 1 - Password phải có ít nhất 6 ký tự!
+2025-03-21 15:56:29,814 [INFO] Người dùng cố gắng đăng nhập với username: ADmin
+2025-03-21 15:56:29,814 [WARNING] Đăng nhập thất bại cho username: ADmin
+2025-03-21 15:56:37,148 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 15:56:37,148 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:00:06,990 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:00:06,991 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:00:07,058 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:01:30,081 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:01:30,081 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:01:30,118 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:01:32,838 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:02:53,886 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:02:53,888 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:02:53,950 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:07:40,878 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:07:40,879 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:07:40,950 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:09:25,126 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:09:25,127 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:17:10,687 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:17:10,688 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:17:10,749 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:19:36,060 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:19:36,061 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:19:36,119 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:21:49,634 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:21:49,635 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:21:49,702 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:29:23,405 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:29:23,406 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:29:23,468 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:32:29,540 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:32:29,541 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:32:29,604 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:36:02,288 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:36:06,258 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:36:06,258 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:36:06,316 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:36:10,503 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:36:53,597 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:36:58,304 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:36:58,305 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:36:58,366 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:37:01,618 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:37:22,269 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:37:29,103 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:37:29,104 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:37:29,164 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:37:35,307 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:40:33,402 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:40:37,167 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:40:37,168 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:40:37,226 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:43:38,358 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:51:31,393 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:51:38,382 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:51:38,383 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:51:38,443 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:51:57,337 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:53:09,806 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:53:16,310 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:53:16,311 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:53:16,368 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:54:19,213 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:54:29,300 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:54:33,163 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:54:33,164 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:54:33,227 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 16:55:06,206 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 16:59:28,665 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 16:59:35,037 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 16:59:35,037 [INFO] Đăng nhập thành công: Admin
+2025-03-21 16:59:35,100 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:00:50,325 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:01:41,460 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:01:46,591 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:01:46,592 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:01:46,653 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:06:42,739 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:15:51,691 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:15:56,051 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:15:56,051 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:15:56,121 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:17:39,983 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:17:41,757 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:17:46,537 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:17:46,538 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:17:46,600 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:19:51,888 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:19:56,825 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:19:56,826 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:19:56,889 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:22:09,439 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:22:14,358 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:22:14,359 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:22:14,425 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:23:17,695 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:28:59,630 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:29:03,822 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:29:03,822 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:29:03,887 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:29:18,484 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:29:32,794 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:29:38,659 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:29:38,660 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:29:38,725 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:30:03,829 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:31:56,261 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:31:59,969 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:31:59,969 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:32:00,035 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:32:40,257 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:57:13,587 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:57:20,813 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:57:20,814 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:58:21,530 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:58:26,511 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:58:26,511 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:58:34,240 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:58:40,384 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:58:40,385 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:58:40,445 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 17:59:19,189 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 17:59:20,872 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 17:59:24,562 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 17:59:24,563 [INFO] Đăng nhập thành công: Admin
+2025-03-21 17:59:24,626 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:01:09,549 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 18:01:14,207 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 18:01:14,208 [INFO] Đăng nhập thành công: Admin
+2025-03-21 18:01:14,273 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:03:01,879 [INFO] generated new fontManager
+2025-03-21 18:09:04,462 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 18:09:06,232 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 18:09:10,481 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 18:09:10,482 [INFO] Đăng nhập thành công: Admin
+2025-03-21 18:09:10,547 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:09:19,325 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 18:10:18,432 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 18:10:22,236 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 18:10:22,237 [INFO] Đăng nhập thành công: Admin
+2025-03-21 18:10:22,304 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:13:35,143 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 18:18:08,708 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 18:18:12,322 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 18:18:12,323 [INFO] Đăng nhập thành công: Admin
+2025-03-21 18:18:12,386 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:27:26,284 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 18:27:38,376 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 18:27:41,910 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 18:27:41,911 [INFO] Đăng nhập thành công: Admin
+2025-03-21 18:27:41,975 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:31:26,723 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 18:33:14,742 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 18:33:18,545 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 18:33:18,546 [INFO] Đăng nhập thành công: Admin
+2025-03-21 18:33:18,610 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:35:00,088 [INFO] Người dùng đã thoát chương trình.
+2025-03-21 18:35:02,149 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-21 18:35:08,036 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-21 18:35:08,037 [INFO] Đăng nhập thành công: Admin
+2025-03-21 18:35:08,102 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-21 18:35:48,517 [INFO] Đăng xuất khỏi hệ thống.
+2025-03-21 18:35:49,662 [INFO] Người dùng đã thoát chương trình.
+2025-03-26 15:22:10,371 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-26 15:22:21,569 [INFO] Người dùng cố gắng đăng nhập với username: Admin@gmail.com
+2025-03-26 15:22:21,569 [WARNING] Đăng nhập thất bại cho username: Admin@gmail.com
+2025-03-26 15:22:27,014 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-26 15:22:27,015 [INFO] Đăng nhập thành công: Admin
+2025-03-26 15:22:27,296 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-26 15:24:42,644 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-26 15:24:49,596 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-26 15:24:49,597 [INFO] Đăng nhập thành công: Admin
+2025-03-26 15:24:49,659 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-26 15:24:55,109 [INFO] generated new fontManager
+2025-03-26 15:25:09,456 [INFO] Người dùng đã thoát chương trình.
+2025-03-26 16:23:23,225 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-26 16:23:26,122 [INFO] Người dùng đã thoát chương trình.
+2025-03-26 16:47:33,236 [INFO] Ứng dụng bắt đầu chạy.
+2025-03-26 16:47:37,929 [INFO] Người dùng cố gắng đăng nhập với username: Admin
+2025-03-26 16:47:37,930 [INFO] Đăng nhập thành công: Admin
+2025-03-26 16:47:38,092 [INFO] Chuyển sang màn hình Cipher sau khi đăng nhập thành công
+2025-03-26 16:59:26,826 [INFO] Người dùng đã thoát chương trình.
